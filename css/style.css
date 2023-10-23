@@ -23,8 +23,9 @@ nav {
     left: 0;
     width: 100vw;
     height: 50px;
+    background-color: white;
     /* debug */
-    background-color: azure;
+    /* background-color: azure; */
 }
 .navbar_item {
     font-size: 16px;
