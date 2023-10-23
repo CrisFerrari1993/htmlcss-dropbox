@@ -112,7 +112,8 @@ section{
     display: flex;
     flex-direction: column;
     /* background-color: bisque; */
-    padding: 2% 10% 2% 10%;
+    width: 80%;
+    margin: 0 auto;
 }
 .radius_sec {
     display: flex;
