@@ -156,7 +156,9 @@ section{
 }
 .plan_type {
     text-align: center;
-    padding: 10px 0px 10px 0px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2% 0%;
     border-bottom: 1px solid rgb(211, 211, 211);
 }
 .plan_info {
@@ -174,27 +176,32 @@ section{
     margin-bottom: 10px;
 }
 .user {
+    width: 80%;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    padding: 4% 0% 4% 5%;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 .user span.time {
     color: rgb(211,211,211);
 }
 .user_info {
-    padding: 2% 0% 2% 5%;
+    width: 80%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    
 }
 .user_detail {
     display: flex;
     margin-bottom: 20px;
 }
 .plan_hit {
+    width: 80%;
+    margin: auto;
     margin-top: 30px;
-    padding: 5% 0% 2% 5%;
 }
 .user_info .btn {
     margin-bottom: 20px;
@@ -215,7 +222,7 @@ section{
     border: 1px solid rgb(211, 211, 211);
     height: 1px;
     width: 20%;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 /* enterprise row rule */
 .enterprise_contain {
