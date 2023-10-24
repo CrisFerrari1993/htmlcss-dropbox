@@ -112,12 +112,17 @@ a:hover {
 }
 /* main */
   /* selection section */
-#plan_section {
+#section {
     display: flex;
     flex-direction: column;
     /* background-color: bisque; */
     width: 80%;
     margin: 0 auto;
+}
+#section.row {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
 }
 .radius_sec {
     display: flex;
@@ -246,7 +251,29 @@ a:hover {
     padding: 2% 0% 5% 0%
 }
 /* read section rule */
+.read_top {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+}
+.rd_rx{
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+    padding-top: 10%;
+}
+.rd_rx p, .btn {
+    margin: 20px 0px 20px 0px;
+}
 
+.rd_lx {
+    padding: 2% 2% 2% 0%;
+    padding-left: 10px;
+    max-width: 50%;
+}
+.rd_lx img {
+    max-width: 100%;
+}
 /* btn rules */
 .btn {
     background-color:#0061fe ;
@@ -259,4 +286,13 @@ a:hover {
 .btn:hover {
     filter: grayscale(50%);
     box-shadow: 2px 2px rgba(0,0,0,0.5) ;
+}
+.btn.white {
+    background-color: white;
+    border: 1px solid rgb(211, 211, 211);
+    color: rgb(211, 211, 211);
+}
+.btn.white:hover {
+    background-color: rgb(211, 211, 211);
+    color: black;
 }
