@@ -115,25 +115,25 @@ a:hover {
 }
 /* main */
 /* selection section */
-#section {
+.section {
     display: flex;
     flex-direction: column;
     /* background-color: bisque; */
     width: 80%;
     margin: 0 auto;
 }
-#section.row {
+.section.row {
     max-width: 80%;
     margin: 0 auto;
     display: flex;
 }
-#col_divider{
+.col_divider{
     border: 1px solid rgb(211, 211, 211);
     height: 1px;
     width: 20%;
     margin-left: 10%;
 }
-#section_client{
+.section_client{
     width: 100%;
     display: flex;
     flex-flow: column;
@@ -400,14 +400,36 @@ a:hover {
 /* try rules */
 .try {
     display: flex;
-    width: 100%;
 }
 .try-rx, .try-lx{
     width: 50%;
-    padding: 9%;
+    padding:8% 8% 8% 10%;
     background-color: #9ad1e2;
 }
-
+/* frequent ask rules */
+.question_section{
+    width: 80%;
+    margin: 0 auto;
+}
+.question_section h2{
+    margin: 60px 0px 40px 0px;
+}
+.question_section p{
+    font-weight: 600;
+}
+.question_section p,
+.question_section i {
+    margin: 40px 20px 40px 0px;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.question.first {
+    border-top: 1px solid black;
+}
 /* btn rules */
 .btn {
     background-color:#0061fe ;
