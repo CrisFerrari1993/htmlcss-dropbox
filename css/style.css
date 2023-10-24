@@ -299,6 +299,19 @@ a:hover {
 .li_col_txt p{
     font-size: 12px;
 }
+/* read_bottom rules */
+.read_bottom {
+    padding: 5% 70% 5% 0%;
+    display: flex;
+    flex-flow: column wrap;
+}
+.read_bottom h2{
+    margin-bottom:20px;
+}
+.read_bottom a {
+    text-decoration: underline #0061fe;
+    color: #0061fe;
+}
 /* btn rules */
 .btn {
     background-color:#0061fe ;
