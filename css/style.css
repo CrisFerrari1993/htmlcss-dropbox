@@ -136,7 +136,7 @@ a:hover {
 #section_client{
     width: 100%;
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
 }
 .radius_sec {
     display: flex;
@@ -362,6 +362,9 @@ a:hover {
     align-content: center;
     position: relative;
 }
+.first_square:hover {
+    border: 10px solid rgba(211,211,211,0.5)
+}
 .green{
     background-color: rgb(144, 189, 146);
 }
@@ -394,6 +397,17 @@ a:hover {
     transform: translate(-50%, -50%);
     
 }
+/* try rules */
+.try {
+    display: flex;
+    width: 100%;
+}
+.try-rx, .try-lx{
+    width: 50%;
+    padding: 9%;
+    background-color: #9ad1e2;
+}
+
 /* btn rules */
 .btn {
     background-color:#0061fe ;
@@ -411,6 +425,10 @@ a:hover {
     background-color: white;
     border: 1px solid rgb(211, 211, 211);
     color: rgb(211, 211, 211);
+}
+.btn.white.black{
+    color: black;
+    border: none;
 }
 .btn.white:hover {
     background-color: rgb(211, 211, 211);
