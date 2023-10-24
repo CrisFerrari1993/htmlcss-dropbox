@@ -4,7 +4,10 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+img {
+    max-width: 100%;
+    height: auto;
+}
 :root {
     font-family: 'Open Sans', sans-serif;
 }
@@ -120,7 +123,7 @@ a:hover {
     margin: 0 auto;
 }
 #section.row {
-    max-width: 100%;
+    max-width: 80%;
     margin: 0 auto;
     display: flex;
 }
@@ -273,6 +276,28 @@ a:hover {
 }
 .rd_lx img {
     max-width: 100%;
+}
+/* read list rule */
+.read_list {
+}
+.li_row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.li_col {
+    max-width: calc(100% / 3);
+    padding: 2% 0% 2% 0%;
+}
+.li_col_img, .li_col_txt {
+    padding: 3%;
+}
+.li_col_txt h5,
+.li_col_txt p {
+    margin-bottom: 20px;
+}
+.li_col_txt p{
+    font-size: 12px;
 }
 /* btn rules */
 .btn {
