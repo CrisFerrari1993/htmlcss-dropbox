@@ -136,8 +136,6 @@ a:hover {
 }
 .section_client{
     width: 100%;
-    display: flex;
-    flex-flow: column;
 }
 .radius_sec {
     display: flex;
@@ -317,49 +315,37 @@ a:hover {
     color: #0061fe;
 }
 /* selection_client rules */
-.flexbox{
+.client_container{
+    max-width: 100%;
+    max-height: 400px;
+    background-color:#c7c7c7;
     display: flex;
-    flex-flow: row;
-    width: 100%;
-    height: fit-content;
 }
-.flexbox_firts_square{
+.sidebox{
     width: calc(100% / 3);
     display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
 }
-.flexbox_second_square{
-    width: calc(100% / 3);
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(238, 238, 238);
-}
-.second_square_imagebox{
+.sidebox_logo {
     width: 50%;
-    margin: 10% 30% 0% 10%;
-}
-.textbox{
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 400px;
-}
-.textbox p, span{
-    margin-bottom: 20px;
-    font-size: 15px;
-}
-.box_divider{
-    width: 30%;
-    margin: 10% 0% 10% 10%;
-    border: 1px solid rgb(179, 179, 179);
-}
-.first_square{
-    width: calc(100% / 2);
-    height: calc(100% / 2);
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    height: 50%;
     position: relative;
+}
+.sidebox_logo:hover {
+    border: 10px solid rgba(0,0,0,0.1);
+}
+.sidebox_logo img {
+    max-width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.centerbox {
+    width: calc(100% / 3);
+    max-height: 100%;
+    background-color: #c7c7c7;
+    overflow-y: auto;
 }
 .first_square:hover {
     border: 10px solid rgba(211,211,211,0.5)
@@ -369,6 +355,9 @@ a:hover {
 }
 .purple {
     background-color: rgb(97, 58, 64);
+}
+.cyan img{
+    height: 10%;
 }
 .cyan {
     background-color: #4978c4;
@@ -386,15 +375,17 @@ a:hover {
 .lightAzure {
     background-color: #c3daff;
 }
-.first_square img{
+/* center square rules */
+.container.wrapper{
+    width: 100%;
+    padding: 10%;
+    overflow-y: auto;
+}
+.img_box img{
     max-width: 60%;
-    max-height: 100% ;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 5;
-    transform: translate(-50%, -50%);
-    
+}
+.text_box p {
+    margin-bottom: 30px;
 }
 /* try rules */
 .try {
