@@ -124,7 +124,7 @@ a:hover {
     margin: 0 auto;
 }
 .section.row {
-    max-width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
 }
@@ -161,20 +161,17 @@ a:hover {
 }
 .plan_selection {
     display: flex;
+    justify-content: space-between;
     width: 100%;
-
-    /* debug */
-    /* background-color: bisque; */
 }
 .plan_enterprise {
     border: 1px solid rgb(211,211,211);
-    margin: 10px;
+    margin-top: 20px;
 }
 /* column rules */
 .selection_col {
-    margin: 10px;
-    width: calc((100% / 3 ) - 20px );
-    border: 1px solid rgb(211, 211, 211);
+    width: calc((100% / 3) -10px);
+    border: 1px solid #c7c7c7;
 }
 .plan_type {
     text-align: center;
@@ -267,15 +264,14 @@ a:hover {
     display: flex;
     flex-flow: column wrap;
     width: 50%;
-    padding-top: 10%;
+    padding: 10%;
 }
 .rd_rx p, .btn {
     margin: 20px 0px 20px 0px;
 }
 
 .rd_lx {
-    padding: 2% 2% 2% 0%;
-    padding-left: 10px;
+    margin: 20px 20px 20px 0px;
     max-width: 50%;
 }
 .rd_lx img {
@@ -316,9 +312,7 @@ a:hover {
 }
 /* selection_client rules */
 .client_container{
-    max-width: 100%;
-    max-height: 400px;
-    background-color:#c7c7c7;
+    min-width: 100%;
     display: flex;
 }
 .sidebox{
@@ -330,9 +324,12 @@ a:hover {
     width: 50%;
     height: 50%;
     position: relative;
+    padding: 20%;
 }
 .sidebox_logo:hover {
-    border: 10px solid rgba(0,0,0,0.1);
+    border: 20px solid rgba(0,0,0,0.1);
+    margin: 0;
+    padding: 0;
 }
 .sidebox_logo img {
     max-width: 50%;
@@ -343,12 +340,7 @@ a:hover {
 }
 .centerbox {
     width: calc(100% / 3);
-    max-height: 100%;
     background-color: #c7c7c7;
-    overflow-y: auto;
-}
-.first_square:hover {
-    border: 10px solid rgba(211,211,211,0.5)
 }
 .green{
     background-color: rgb(144, 189, 146);
@@ -377,15 +369,18 @@ a:hover {
 }
 /* center square rules */
 .container.wrapper{
-    width: 100%;
-    padding: 10%;
+    max-height: 500px;
     overflow-y: auto;
 }
 .img_box img{
+    margin: 30px;
     max-width: 60%;
 }
 .text_box p {
-    margin-bottom: 30px;
+    margin: 30px;
+}
+.text_box span {
+    padding-left: 30px;
 }
 /* try rules */
 .try {
