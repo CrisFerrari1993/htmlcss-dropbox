@@ -321,8 +321,8 @@ a:hover {
     flex-flow: row wrap;
 }
 .sidebox_logo {
-    width: 50%;
-    height: 50%;
+    min-width: 50%;
+    min-height: 50%;
     position: relative;
     padding: 20%;
 }
