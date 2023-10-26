@@ -11,42 +11,78 @@ img{
     max-width: 100%;
 }
 /* Navbar rules */
-nav {
-    padding: 25px 25px 25px 0px;
-    position: fixed;
-    z-index: 500;
+nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-content: center;
+    width: 100%;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 50px;
-    background-color: white;
-    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
-    /* debug */
-    /* background-color: azure; */
+    height: 70px;
+    z-index: 500;
+    border-bottom: 1px solid black;
+    background-color: #fff;
 }
-.navbar_item ul {
-    padding-left: 10px;
-    display: flex;
-    align-items: center;
+nav .btn{
+    margin: 0;
+    padding: 5px;
 }
-.navbar_item li {
+nav ul{
+    display: inline-flex;
     list-style: none;
-    margin: 0px 10px 0 10px;
+    color: black;
+    padding: 0;
 }
-a {
+nav ul li {
+    width: fit-content;
+    margin: 10px;
+    padding: 10px;
+}
+nav ul li:hover{
+    text-decoration: underline;
+    color: black;
+}
+nav ul li a{
     text-decoration: none;
     color: black;
 }
-a:hover {
-    text-decoration: underline 1px solid black;
+.sub-menu-1 {
+    display: none;
+}
+nav ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color: #ffffff;
+    margin-top: 15px;
+    margin-left: -15px;
+    padding: 0;
+    width: 300px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+nav ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+nav ul li:hover .sub-menu-1 li{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    border-bottom: 1px solid #c7c7c7;
+    text-align: left;
+}
+nav ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+nav ul li:hover .sub-menu-1 ul li a:hover{
+    color: #0061fe;
+    text-decoration: underline;
 }
 /* jumbotron rules */
 #jumbotron {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 70px;
     padding: 2% 5% 2% 5%;
     background-color: rgb(184, 214, 228);
 }
@@ -64,6 +100,9 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-content: flex-start;
+}
+.jumbo_txt a {
+    color: black;
 }
 .jumbo_txt p{
     margin-top: 30px;
