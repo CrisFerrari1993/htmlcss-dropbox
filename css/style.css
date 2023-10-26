@@ -28,6 +28,7 @@ nav .btn{
     margin: 0;
     padding: 5px;
 }
+
 nav ul{
     display: inline-flex;
     list-style: none;
@@ -39,13 +40,13 @@ nav ul li {
     margin: 10px;
     padding: 10px;
 }
-nav ul li:hover{
+nav ul a:hover {
     text-decoration: underline;
     color: black;
 }
 nav ul li a{
-    text-decoration: none;
     color: black;
+    text-decoration: none;
 }
 .sub-menu-1 {
     display: none;
@@ -60,6 +61,7 @@ nav ul li:hover .sub-menu-1{
     width: 300px;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
+    box-shadow: 5px 5px rgba(0,0,0,0.1);
 }
 nav ul li:hover .sub-menu-1 ul {
     display: block;
